@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dicionário de motion · 30 efeitos para pedir à IA</title>
+<meta name="description" content="Trinta efeitos de animação com o nome em português, o termo exato para usar no pedido à IA e um prompt pronto para copiar. Por Simião Cavalcante.">
+<meta name="theme-color" content="#02050A">
+<link rel="canonical" href="https://simiao-cavalcante.github.io/dicionario-de-motion/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Dicionário de motion · 30 efeitos para pedir à IA">
+<meta property="og:description" content="Cada efeito rodando na tela, com o termo para usar no pedido e o prompt pronto para copiar.">
+<meta property="og:url" content="https://simiao-cavalcante.github.io/dicionario-de-motion/">
+<meta property="og:image" content="https://simiao-cavalcante.github.io/dicionario-de-motion/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2302050A'/%3E%3Crect x='18' y='18' width='28' height='28' rx='6' fill='%230B5CFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --noite:#02050A; --noite2:#050B1A; --noite3:#040A18; --marinho:#0A2A6B; --azul:#0B5CFF; --ceu:#4A9FFF; --gelo:#D6E8FF;
+  --tinta:#EAF1FF; --tinta2:#9DB0D4; --linha:rgba(74,159,255,.18); --linha2:rgba(74,159,255,.4);
+  --display:"Clash Display","Sora",system-ui,sans-serif; --corpo:"Sora",system-ui,sans-serif; --serifa:"Instrument Serif",Georgia,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --grad:linear-gradient(100deg,#4A9FFF 0%,#0B5CFF 55%,#7CB8FF 100%);
+  --max:1180px; --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--noite);color:var(--tinta);font:400 17px/1.65 var(--corpo);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ceu);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--max),100% - 32px);margin-inline:auto}
+em.s{font-family:var(--serifa);font-style:italic;font-weight:400;letter-spacing:-.01em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.kicker{font:600 12px/1 var(--corpo);letter-spacing:.22em;text-transform:uppercase;color:var(--ceu)}
+h2{font:600 clamp(30px,4.6vw,54px)/1.06 var(--display);letter-spacing:-.015em;margin:14px 0 18px}
+.lead{color:var(--tinta2);max-width:64ch}
+section{position:relative;padding:clamp(64px,9vw,120px) 0}
+.grao{position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* barra superior */
+.topo{position:fixed;inset:0 0 auto 0;z-index:30;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.topo.solido{background:rgba(2,5,10,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.topo img{height:28px;width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--corpo);text-decoration:none;border:1px solid var(--linha2);color:var(--tinta);background:rgba(11,92,255,.08);cursor:pointer;transition:transform .2s var(--ease),box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px);background:rgba(11,92,255,.2)}
+.btn.pri{background:var(--azul);border-color:var(--azul);color:#fff;box-shadow:0 10px 40px -8px rgba(11,92,255,.75),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn.pri:hover{box-shadow:0 16px 54px -8px rgba(11,92,255,.95),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.topo .btn{min-height:42px;padding:0 18px;font-size:14px}
+
+/* hero */
+.hero{min-height:100svh;padding:110px 0 72px;display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(800px 560px at 75% 45%,rgba(11,92,255,.2),transparent 65%),linear-gradient(180deg,transparent 55%,var(--noite) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-2;opacity:.5;background-image:linear-gradient(var(--linha) 1px,transparent 1px),linear-gradient(90deg,var(--linha) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(70% 60% at 70% 45%,#000,transparent);mask-image:radial-gradient(70% 60% at 70% 45%,#000,transparent)}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(30px,5vw,72px);align-items:center}
+.hero h1{font:600 clamp(36px,min(5.6vw,9vh),74px)/1 var(--display);letter-spacing:-.025em;margin:20px 0 24px}
+.hero h1 em.s{font-size:1.08em;line-height:.9}
+.hero p.lead{font-size:clamp(16px,1.3vw,18.5px)}
+.acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.sobe{opacity:0;transform:translateY(24px);animation:sobe .9s var(--ease) forwards}
+.sobe.d1{animation-delay:.08s}.sobe.d2{animation-delay:.2s}.sobe.d3{animation-delay:.34s}.sobe.d4{animation-delay:.5s}
+@keyframes sobe{to{opacity:1;transform:none}}
+
+/* teste interativo */
+.teste{border:1px solid var(--linha2);border-radius:26px;background:radial-gradient(420px 300px at 50% 30%,rgba(11,92,255,.22),transparent 70%),var(--noite2);padding:20px;box-shadow:0 40px 100px -40px rgba(11,92,255,.55)}
+.teste .barra-t{display:flex;align-items:center;gap:7px;margin-bottom:14px;font:500 12px var(--corpo);color:var(--tinta2);letter-spacing:.08em}
+.teste .barra-t i{width:9px;height:9px;border-radius:50%;background:var(--linha2)}
+.teste .barra-t span{margin-left:auto}
+.palco{position:relative;height:250px;border-radius:18px;background:var(--noite3);border:1px solid var(--linha);overflow:hidden;display:grid;place-items:center}
+.palco::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--linha) 1px,transparent 1px),linear-gradient(90deg,var(--linha) 1px,transparent 1px);background-size:28px 28px;opacity:.45}
+.palco .q{width:78px;height:78px;border-radius:16px}
+.palco .chao{position:absolute;left:18%;right:18%;bottom:44px;height:1px;background:var(--linha2)}
+.palco .duvida{position:absolute;right:22%;top:26%;font:400 54px/1 var(--serifa);font-style:italic;color:var(--tinta2);opacity:0}
+.pedido-atual{min-height:76px;margin:16px 4px 12px;font-size:15px;color:var(--tinta2)}
+.pedido-atual b{display:block;font:500 12px var(--corpo);letter-spacing:.16em;text-transform:uppercase;color:var(--ceu);margin-bottom:6px}
+.pedido-atual q{font-family:var(--mono);font-size:14px;color:var(--gelo);quotes:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 15px;border-radius:999px;border:1px solid var(--linha2);background:rgba(11,92,255,.06);font:500 14px var(--corpo);cursor:pointer;transition:background .2s,border-color .2s,transform .2s var(--ease)}
+.chip:hover{background:rgba(11,92,255,.2);transform:translateY(-1px)}
+.chip[aria-pressed="true"]{background:var(--azul);border-color:var(--azul);color:#fff}
+.chip.vago{border-style:dashed;font-family:var(--serifa);font-style:italic;font-size:16px}
+.chip.vago[aria-pressed="true"]{background:#1a2440;border-color:var(--tinta2)}
+
+.t-vago .q{animation:t-vago 1.6s linear}
+.t-vago .duvida{animation:t-duvida 1.6s ease-out forwards}
+@keyframes t-vago{0%{opacity:.25;transform:none}25%{opacity:1;transform:rotate(9deg) scale(1.06)}50%{transform:rotate(-7deg) scale(.94)}75%{transform:rotate(4deg)}100%{transform:none}}
+@keyframes t-duvida{0%{opacity:0;transform:translateY(8px)}30%,100%{opacity:1;transform:none}}
+.t-fade-in .q{animation:t-fade .7s ease-out}
+@keyframes t-fade{from{opacity:0}}
+.t-pop-in .q{animation:t-pop .5s ease-out}
+@keyframes t-pop{0%{transform:scale(0)}65%{transform:scale(1.15)}100%{transform:scale(1)}}
+.t-overshoot .q{animation:t-over .7s cubic-bezier(.34,1.56,.64,1)}
+@keyframes t-over{from{transform:translateX(-170px)}}
+.t-blur-in .q{animation:t-blur .8s ease-out}
+@keyframes t-blur{from{filter:blur(18px);opacity:0;transform:scale(1.2)}}
+.t-spring .q{animation:t-spring 1.3s ease-in-out}
+@keyframes t-spring{0%{transform:translateY(-150px)}24%{transform:translateY(22px)}40%{transform:translateY(-12px)}54%{transform:translateY(6px)}68%{transform:translateY(-3px)}80%,100%{transform:none}}
+.t-bounce .q{animation:t-bounce 1.2s}
+@keyframes t-bounce{0%{transform:translateY(-150px);animation-timing-function:ease-in}34%{transform:translateY(46px);animation-timing-function:ease-out}54%{transform:translateY(-10px);animation-timing-function:ease-in}70%{transform:translateY(46px);animation-timing-function:ease-out}80%{transform:translateY(26px);animation-timing-function:ease-in}90%{transform:translateY(46px);animation-timing-function:ease-out}100%{transform:translateY(46px)}}
+
+/* como pedir */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+.passo{padding:30px 28px;border:1px solid var(--linha);border-radius:22px;background:linear-gradient(180deg,rgba(10,42,107,.25),rgba(10,42,107,.04))}
+.passo b{display:block;font:600 52px/1 var(--display);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px}
+.passo h3{font:600 19px/1.3 var(--corpo);margin-bottom:10px}
+.passo p{color:var(--tinta2);font-size:15.5px}
+.passo code{font-family:var(--mono);font-size:13.5px;color:var(--gelo);background:rgba(11,92,255,.14);padding:1px 6px;border-radius:5px}
+
+/* efeitos */
+.efeitos .cab{display:flex;flex-wrap:wrap;gap:24px;align-items:end;justify-content:space-between;margin-bottom:34px}
+.abas{display:flex;flex-wrap:wrap;gap:8px}
+.aba{min-height:42px;padding:0 17px;border-radius:999px;border:1px solid var(--linha2);background:transparent;font:600 14px var(--corpo);color:var(--tinta2);cursor:pointer;transition:all .25s}
+.aba span{font-weight:400;opacity:.7;margin-left:4px}
+.aba[aria-pressed="true"]{background:var(--azul);border-color:var(--azul);color:#fff}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{display:flex;flex-direction:column;border:1px solid var(--linha);border-radius:22px;background:var(--noite2);overflow:hidden;transition:border-color .3s,transform .3s var(--ease)}
+.card:hover{border-color:var(--linha2);transform:translateY(-3px)}
+.card[hidden]{display:none}
+.info{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.info .topo-c{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.info .n{font:500 13px var(--display);color:var(--tinta2);letter-spacing:.06em}
+.info .g{font:500 11px var(--corpo);letter-spacing:.16em;text-transform:uppercase;color:var(--tinta2)}
+.info h3{font:600 23px/1.15 var(--display);letter-spacing:-.01em;margin-top:6px}
+.info .en{font:400 22px/1.2 var(--serifa);font-style:italic;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:2px}
+.info .uso{color:var(--tinta2);font-size:14.5px;line-height:1.6;margin:12px 0 16px}
+.pedido{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start;padding:12px 12px 12px 14px;border-radius:14px;background:rgba(11,92,255,.08);border:1px solid var(--linha)}
+.pedido code{font-family:var(--mono);font-size:12.5px;line-height:1.55;color:var(--gelo)}
+.copiar{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--linha2);background:var(--noite2);font:600 12px var(--corpo);cursor:pointer;white-space:nowrap;transition:background .2s}
+.copiar:hover{background:rgba(11,92,255,.25)}
+.copiar.ok{background:var(--azul);border-color:var(--azul);color:#fff}
+.copiar svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* demos: palco de cada cartão */
+.demo{position:relative;height:178px;display:grid;place-items:center;overflow:hidden;cursor:pointer;background:radial-gradient(260px 160px at 50% 40%,rgba(11,92,255,.16),transparent 70%),var(--noite3);border-bottom:1px solid var(--linha)}
+.demo::after{content:"tocar de novo";position:absolute;right:10px;bottom:8px;font:500 10.5px var(--corpo);letter-spacing:.12em;text-transform:uppercase;color:var(--tinta2);opacity:0;transition:opacity .2s}
+.demo:hover::after{opacity:.75}
+.reinicia *,.reinicia{animation:none!important}
+.fora *{animation-play-state:paused!important}
+.q{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,#4A9FFF,#0B5CFF);box-shadow:0 8px 30px -6px rgba(11,92,255,.8)}
+.q.p{width:30px;height:30px;border-radius:7px}
+.q.cinza{background:linear-gradient(135deg,#6b7a96,#3d4a63);box-shadow:none}
+.pal{font:600 36px/1 var(--display);letter-spacing:-.01em}
+.frase{font:500 21px/1.3 var(--corpo);text-align:center;padding:0 16px}
+.rot{position:absolute;left:14px;font:500 11px var(--corpo);letter-spacing:.12em;text-transform:uppercase;color:var(--tinta2)}
+.trilho{position:relative;width:76%;height:56px}
+.trilho::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--linha2)}
+.trilho .q{position:absolute;left:0;top:5px}
+.trilho.duplo{height:40px}
+.trilho.duplo .q{width:34px;height:34px;top:3px;border-radius:8px}
+.alvo{position:absolute;top:-6px;bottom:-12px;right:0;width:1px;background:var(--gelo);opacity:.5}
+.alvo.meio{right:auto;left:calc(100% - 46px)}
+
+/* entradas */
+.fx-fade-in .q{animation:k-fade 2.8s ease-out infinite}
+@keyframes k-fade{0%{opacity:0}28%,84%{opacity:1}100%{opacity:0}}
+.fx-slide-in .q{animation:k-slide 2.8s cubic-bezier(.16,1,.3,1) infinite}
+@keyframes k-slide{0%{transform:translateX(-150px);opacity:0}32%,84%{transform:none;opacity:1}100%{transform:none;opacity:0}}
+.fx-pop-in .q{animation:k-pop 2.8s ease-out infinite}
+@keyframes k-pop{0%{transform:scale(0)}14%{transform:scale(1.2)}24%,84%{transform:scale(1)}100%{transform:scale(0)}}
+.fx-blur-in .pal{animation:k-blur 2.8s ease-out infinite}
+@keyframes k-blur{0%{filter:blur(16px);opacity:0;letter-spacing:.24em}36%,84%{filter:blur(0);opacity:1;letter-spacing:-.01em}100%{filter:blur(0);opacity:0}}
+.fx-draw-on svg{width:76%;height:auto;overflow:visible}
+.fx-draw-on path,.fx-draw-on circle{fill:none;stroke:var(--ceu);stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:k-draw 3.2s ease-in-out infinite}
+.fx-draw-on circle{stroke:var(--gelo);animation-delay:.25s}
+@keyframes k-draw{0%{stroke-dashoffset:1;opacity:1}46%,84%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.mask{position:relative;display:inline-block}
+.mask .pal{animation:k-mtxt 2.8s linear infinite}
+.mask i{position:absolute;inset:-6px -10px;background:var(--azul);transform:scaleX(0);transform-origin:left;animation:k-barra 2.8s cubic-bezier(.7,0,.3,1) infinite}
+@keyframes k-mtxt{0%,19%{opacity:0}19.5%,86%{opacity:1}100%{opacity:0}}
+@keyframes k-barra{0%{transform:scaleX(0);transform-origin:left}19%{transform:scaleX(1);transform-origin:left}19.5%{transform:scaleX(1);transform-origin:right}38%,100%{transform:scaleX(0);transform-origin:right}}
+
+/* ritmo */
+.fx-ease-out .q{animation:k-ida 2.8s cubic-bezier(.16,1,.3,1) infinite}
+@keyframes k-ida{0%{left:0}42%,78%{left:calc(100% - 46px)}100%{left:0}}
+.fx-ease-in-out .duplo .q{animation:k-ida2 2.8s infinite}
+.fx-ease-in-out .lin .q{animation-timing-function:linear}
+.fx-ease-in-out .eio .q{animation-timing-function:cubic-bezier(.65,0,.35,1)}
+@keyframes k-ida2{0%{left:0}45%,78%{left:calc(100% - 34px)}100%{left:0}}
+.fx-ease-in-out .pilha{display:grid;gap:22px;width:76%}
+.fx-ease-in-out .duplo{width:100%}
+.fx-ease-in-out .rotulo{position:absolute;left:0;top:-17px;font:500 10.5px var(--corpo);letter-spacing:.12em;text-transform:uppercase;color:var(--tinta2)}
+.fx-ease-in-out .eio .rotulo{color:var(--ceu)}
+.fx-overshoot .q{animation:k-ida 2.8s cubic-bezier(.34,1.7,.64,1) infinite}
+.fx-spring .q{animation:k-mola 2.8s ease-in-out infinite}
+@keyframes k-mola{0%{transform:translateY(-120px)}14%{transform:translateY(16px)}24%{transform:translateY(-10px)}33%{transform:translateY(5px)}41%{transform:translateY(-2px)}48%,84%{transform:none}100%{transform:translateY(-120px)}}
+.fx-spring .linha-alvo{position:absolute;left:30%;right:30%;top:calc(50% + 23px);height:1px;background:var(--linha2)}
+.fx-bounce .q{position:absolute;bottom:34px;animation:k-quica 2.8s infinite}
+.fx-bounce .chao{position:absolute;left:22%;right:22%;bottom:33px;height:1px;background:var(--linha2)}
+@keyframes k-quica{0%{transform:translateY(-100px);animation-timing-function:ease-in}22%{transform:none;animation-timing-function:ease-out}32%{transform:translateY(-44px);animation-timing-function:ease-in}42%{transform:none;animation-timing-function:ease-out}48%{transform:translateY(-16px);animation-timing-function:ease-in}54%,84%{transform:none}100%{transform:translateY(-100px)}}
+.fila{display:flex;gap:10px}
+.fx-stagger .q{animation:k-pop 2.8s ease-out infinite}
+
+/* texto */
+.fx-word-reveal span{display:inline-block;opacity:0;animation:k-palavra 3.4s ease-out infinite}
+.fx-word-reveal span.d{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-family:var(--serifa);font-style:italic;font-size:1.25em;font-weight:400}
+@keyframes k-palavra{0%{opacity:0;transform:translateY(12px)}7%,80%{opacity:1;transform:none}92%,100%{opacity:0}}
+.tw{display:inline-block;overflow:hidden;white-space:nowrap;font:500 22px/1.3 var(--mono);color:var(--gelo);width:0;border-right:2px solid var(--ceu);padding-right:2px;animation:k-tw 3.4s steps(13,end) infinite,k-cursor .7s step-end infinite}
+@keyframes k-tw{0%{width:0}50%,92%{width:13ch}100%{width:13ch}}
+@keyframes k-cursor{50%{border-color:transparent}}
+.fx-highlight mark{color:inherit;padding:0 .14em;margin:0 -.04em;border-radius:3px;background:linear-gradient(var(--azul),var(--azul)) no-repeat left center/0% 100%;animation:k-grifo 2.8s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes k-grifo{0%,16%{background-size:0% 100%}40%,84%{background-size:100% 100%}100%{background-size:0% 100%}}
+.rolo{display:inline-flex;flex-direction:column;height:1.3em;overflow:hidden;vertical-align:bottom}
+.rolo span{display:block;line-height:1.3em;animation:k-rolo 3s cubic-bezier(.65,0,.35,1) infinite}
+.rolo span+span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes k-rolo{0%,32%{transform:none}46%,82%{transform:translateY(-100%)}96%,100%{transform:none}}
+.fx-text-swap .frase{font-size:28px;font-weight:600}
+.kin{position:relative;width:100%;height:100%}
+.kin b{position:absolute;inset:0;display:grid;place-items:center;font:600 30px/1 var(--display);opacity:0;animation:k-kin 2.7s cubic-bezier(.16,1,.3,1) infinite}
+.kin b:nth-child(2){font-size:58px;animation-delay:.9s;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kin b:nth-child(3){font-size:40px;animation-delay:1.8s;letter-spacing:.2em}
+@keyframes k-kin{0%{opacity:0;transform:scale(.3) rotate(-6deg)}7%{opacity:1;transform:scale(1.12)}12%,28%{opacity:1;transform:none}33%,100%{opacity:0;transform:scale(1.05)}}
+@property --n{syntax:"<integer>";inherits:false;initial-value:0}
+.conta{font:600 64px/1 var(--display);letter-spacing:-.02em;font-variant-numeric:tabular-nums;counter-reset:n var(--n);animation:k-conta 3s cubic-bezier(.16,1,.3,1) infinite}
+.conta::after{content:counter(n) "%";background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes k-conta{0%{--n:0}48%,100%{--n:87}}
+
+/* câmera: cenário reaproveitado */
+.cena{position:absolute;inset:0}
+.estudio{background:linear-gradient(180deg,#0a1630,#050b1a)}
+.estudio .estante{position:absolute;left:8%;right:8%;top:16%;height:28%;border-bottom:2px solid rgba(74,159,255,.25);background:repeating-linear-gradient(90deg,rgba(74,159,255,.22) 0 9px,transparent 9px 15px,rgba(74,159,255,.12) 15px 26px,transparent 26px 33px)}
+.estudio .rosto{position:absolute;left:50%;top:34%;width:56px;height:56px;margin-left:-28px;border-radius:50%;background:linear-gradient(160deg,#9db8e8,#4d6aa6)}
+.estudio .ombros{position:absolute;left:50%;top:calc(34% + 60px);width:150px;height:90px;margin-left:-75px;border-radius:75px 75px 0 0;background:linear-gradient(180deg,#1e3d82,#0a2a6b)}
+.fx-punch-in .cena{animation:k-punch 2.6s infinite}
+@keyframes k-punch{0%,42%{transform:scale(1)}42.5%,82%{transform:scale(1.42) translateY(8%)}82.5%,100%{transform:scale(1)}}
+.paisagem{background:linear-gradient(180deg,#0b2259 0%,#123a8c 55%,#0a1a3e 56%)}
+.paisagem::before{content:"";position:absolute;width:44px;height:44px;border-radius:50%;left:62%;top:22%;background:radial-gradient(circle,#d6e8ff,#4a9fff);box-shadow:0 0 40px #4a9fff}
+.paisagem::after{content:"";position:absolute;left:-10%;right:-10%;bottom:0;height:56%;background:radial-gradient(60% 70% at 25% 100%,#081738 60%,transparent 61%),radial-gradient(70% 80% at 80% 100%,#06112b 60%,transparent 61%)}
+.fx-ken-burns .cena{animation:k-kb 6s linear infinite alternate}
+@keyframes k-kb{from{transform:scale(1)}to{transform:scale(1.28) translate(-7%,-4%)}}
+.faixa{position:absolute;top:22px;bottom:22px;left:0;width:300%;display:flex;gap:14px;padding:0 14px;animation:k-pan 5s cubic-bezier(.65,0,.35,1) infinite alternate}
+.faixa i{flex:1;border-radius:10px;border:1px solid var(--linha2);background:linear-gradient(180deg,rgba(11,92,255,.28),rgba(11,92,255,.06))}
+.faixa i:nth-child(odd){background:linear-gradient(180deg,rgba(74,159,255,.12),rgba(74,159,255,.02))}
+@keyframes k-pan{0%,10%{transform:none}90%,100%{transform:translateX(-66.66%)}}
+.moldura{position:absolute;inset:14px;pointer-events:none;background:linear-gradient(var(--gelo),var(--gelo)) left top/16px 2px,linear-gradient(var(--gelo),var(--gelo)) left top/2px 16px,linear-gradient(var(--gelo),var(--gelo)) right top/16px 2px,linear-gradient(var(--gelo),var(--gelo)) right top/2px 16px,linear-gradient(var(--gelo),var(--gelo)) left bottom/16px 2px,linear-gradient(var(--gelo),var(--gelo)) left bottom/2px 16px,linear-gradient(var(--gelo),var(--gelo)) right bottom/16px 2px,linear-gradient(var(--gelo),var(--gelo)) right bottom/2px 16px;background-repeat:no-repeat;opacity:.7}
+.camada{position:absolute;left:0;right:0;background-repeat:repeat-x}
+.camada.c1{top:18%;height:40px;background-image:radial-gradient(circle,rgba(214,232,255,.55) 1.5px,transparent 2px);background-size:40px 20px;animation:k-px1 3s linear infinite}
+.camada.c2{bottom:46px;height:44px;background-image:linear-gradient(rgba(74,159,255,.3),rgba(74,159,255,.3));background-size:42px 100%;background-position:0 0;-webkit-mask-image:repeating-linear-gradient(90deg,#000 0 42px,transparent 42px 70px);mask-image:repeating-linear-gradient(90deg,#000 0 42px,transparent 42px 70px);animation:k-px2 1.6s linear infinite}
+.camada.c3{bottom:0;height:60px;background-image:repeating-linear-gradient(90deg,#0B5CFF 0 54px,transparent 54px 120px);animation:k-px3 1s linear infinite}
+@keyframes k-px1{to{background-position-x:-40px}}
+@keyframes k-px2{to{-webkit-mask-position-x:-70px;mask-position-x:-70px}}
+@keyframes k-px3{to{background-position-x:-120px}}
+.alerta{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;font:600 40px/1 var(--display);color:#fff;background:var(--azul);box-shadow:0 0 0 10px rgba(11,92,255,.18),0 0 40px rgba(11,92,255,.7)}
+.fx-shake .cena{display:grid;place-items:center;animation:k-shake 2.6s infinite}
+@keyframes k-shake{0%,58%{transform:none}60%{transform:translate(-7px,3px) rotate(-1.2deg)}62%{transform:translate(7px,-3px) rotate(1.2deg)}64%{transform:translate(-6px,2px) rotate(-.8deg)}66%{transform:translate(5px,-2px) rotate(.6deg)}68%{transform:translate(-3px,1px)}70%{transform:translate(2px,0)}72%,100%{transform:none}}
+.cartao{position:absolute;border-radius:12px;border:1px solid var(--linha2);padding:12px 14px;font:600 13px/1.3 var(--corpo)}
+.cartao.tras{right:12%;top:16%;width:52%;height:56%;background:linear-gradient(160deg,#123a8c,#0a2a6b);animation:k-foco-a 3.2s ease-in-out infinite}
+.cartao.frente{left:12%;bottom:12%;width:44%;height:44%;background:linear-gradient(160deg,#4A9FFF,#0B5CFF);color:#fff;animation:k-foco-b 3.2s ease-in-out infinite}
+@keyframes k-foco-a{0%,38%{filter:blur(0)}52%,86%{filter:blur(6px)}100%{filter:blur(0)}}
+@keyframes k-foco-b{0%,38%{filter:blur(6px)}52%,86%{filter:blur(0)}100%{filter:blur(6px)}}
+
+/* transições */
+.cn{position:absolute;inset:0;display:grid;place-items:center;font:600 22px/1 var(--display);letter-spacing:.02em}
+.cn.a{background:linear-gradient(135deg,#0A2A6B,#050B1A);color:var(--gelo)}
+.cn.b{background:linear-gradient(135deg,#0B5CFF,#4A9FFF);color:#fff}
+.cn>div{text-align:center;font-size:40px}
+.cn small{display:block;font:500 10.5px var(--corpo);letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.fx-hard-cut .b{animation:k-corte 2.4s infinite}
+@keyframes k-corte{0%,49.9%{opacity:0}50%,100%{opacity:1}}
+.fx-crossfade .b{animation:k-fusao 2.4s ease-in-out infinite alternate}
+@keyframes k-fusao{0%,25%{opacity:0}75%,100%{opacity:1}}
+.fx-wipe .b{animation:k-wipe 2.4s cubic-bezier(.65,0,.35,1) infinite alternate}
+@keyframes k-wipe{0%,25%{clip-path:inset(0 100% 0 0)}75%,100%{clip-path:inset(0 0 0 0)}}
+.fx-whip-pan .a{animation:k-whipA 2.4s infinite alternate}
+.fx-whip-pan .b{animation:k-whipB 2.4s infinite alternate}
+@keyframes k-whipA{0%,38%{transform:none;filter:none}50%{transform:translateX(-55%);filter:blur(10px)}62%,100%{transform:translateX(-110%);filter:none}}
+@keyframes k-whipB{0%,38%{transform:translateX(110%);filter:none}50%{transform:translateX(55%);filter:blur(10px)}62%,100%{transform:none;filter:none}}
+.cn.a .anel{width:34px;height:34px;border-radius:50%;border:3px solid var(--ceu);margin:0 auto 10px}
+.fx-zoom-through .cn.a small{margin:0}
+.fx-zoom-through .a{animation:k-zA 2.6s cubic-bezier(.7,0,.3,1) infinite alternate}
+.fx-zoom-through .b{animation:k-zB 2.6s cubic-bezier(.16,1,.3,1) infinite alternate}
+@keyframes k-zA{0%,25%{transform:scale(1);opacity:1}62%,100%{transform:scale(7);opacity:0}}
+@keyframes k-zB{0%,42%{transform:scale(.5);opacity:0}75%,100%{transform:none;opacity:1}}
+.fx-morph .q{animation:k-morph 3s cubic-bezier(.65,0,.35,1) infinite alternate}
+@keyframes k-morph{0%,12%{width:58px;height:58px;border-radius:12px}42%,56%{width:58px;height:58px;border-radius:50%}88%,100%{width:130px;height:46px;border-radius:23px}}
+
+/* pedido completo */
+.mestre{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+.bloco{position:relative;border:1px solid var(--linha2);border-radius:22px;background:var(--noite2);overflow:hidden}
+.bloco .barra-t{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px 12px 20px;border-bottom:1px solid var(--linha);font:500 12px var(--corpo);letter-spacing:.12em;text-transform:uppercase;color:var(--tinta2)}
+.bloco pre{margin:0;padding:22px 22px 26px;white-space:pre-wrap;font:400 14px/1.75 var(--mono);color:var(--gelo);overflow-wrap:anywhere}
+.bloco pre .v{color:var(--ceu)}
+.dica{margin-top:22px;padding:18px 20px;border-left:3px solid var(--azul);background:rgba(11,92,255,.08);border-radius:0 14px 14px 0;color:var(--tinta2);font-size:15px}
+.dica b{color:var(--tinta)}
+
+/* autor e rodapé */
+.autor .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.retrato{position:relative;width:clamp(170px,20vw,240px);aspect-ratio:1}
+.retrato img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:50%;border:2px solid var(--azul)}
+.retrato::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px dashed var(--linha2);animation:gira 40s linear infinite}
+@keyframes gira{to{rotate:360deg}}
+.autor p{color:var(--tinta2);max-width:64ch}
+.redes{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+footer{border-top:1px solid var(--linha);padding:32px 0 48px;font-size:13px;color:var(--tinta2)}
+footer p{max-width:80ch}
+footer p+p{margin-top:8px}
+footer a{color:var(--gelo);text-underline-offset:3px}
+
+.rev{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rev.in{opacity:1;transform:none}
+.aviso{position:fixed;left:50%;bottom:22px;z-index:50;translate:-50% 20px;opacity:0;padding:12px 20px;border-radius:999px;background:var(--azul);color:#fff;font:600 14px var(--corpo);box-shadow:0 14px 40px -10px rgba(11,92,255,.9);transition:opacity .25s,translate .25s var(--ease);pointer-events:none}
+.aviso.on{opacity:1;translate:-50% 0}
+
+@media (max-width:980px){
+  .hero{min-height:auto}
+  .hero .wrap,.mestre{grid-template-columns:1fr}
+  .grade{grid-template-columns:repeat(2,1fr)}
+  .passos{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .grade{grid-template-columns:1fr}
+  .autor .wrap{grid-template-columns:1fr}
+  .topo .btn span{display:none}
+  .palco{height:220px}
+  .acoes .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sobe,.rev{opacity:1;transform:none;animation:none;transition:none}
+  .demo *,.demo .conta{animation-play-state:paused!important}
+  .demo.tocando *,.demo.tocando .conta{animation-play-state:running!important}
+  .demo::after{content:"tocar";opacity:.75}
+  .retrato::before{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="grao" aria-hidden="true"></div>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#inicio" aria-label="Início"><img src="assets/logo.png" alt="Simião Cavalcante" width="76" height="28"></a>
+    <a class="btn" href="#pedido"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>Pedido completo</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="kicker sobe">Dicionário de motion · 30 efeitos</p>
+      <h1 class="sobe d1">A IA anima melhor quando você sabe o <em class="s">nome</em> do efeito</h1>
+      <p class="lead sobe d2">Pedir uma animação bonita não diz nada a quem edita vídeo, seja uma pessoa ou um modelo de IA. Este dicionário reúne os trinta termos que eu uso para editar os meus reels com o Claude, cada um rodando na tela com o pedido pronto para copiar.</p>
+      <div class="acoes sobe d3">
+        <a class="btn pri" href="#efeitos">Ver os 30 efeitos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="btn" href="#pedido">Copiar o pedido completo</a>
+      </div>
+    </div>
+
+    <div class="teste sobe d4" aria-label="Teste interativo">
+      <div class="barra-t"><i></i><i></i><i></i><span>teste antes de pedir</span></div>
+      <div class="palco" id="palco">
+        <div class="chao" aria-hidden="true"></div>
+        <span class="duvida" aria-hidden="true">?</span>
+        <div class="q" aria-hidden="true"></div>
+      </div>
+      <p class="pedido-atual" id="pedidoAtual" aria-live="polite"><b>Seu pedido</b>Clique num termo para ver o mesmo quadrado obedecer a pedidos diferentes, começando pelo pedido vago.</p>
+      <div class="chips" id="chips">
+        <button class="chip vago" data-t="vago" aria-pressed="false">“uma animação bonita”</button>
+        <button class="chip" data-t="fade-in" aria-pressed="false">fade in</button>
+        <button class="chip" data-t="pop-in" aria-pressed="false">pop in</button>
+        <button class="chip" data-t="blur-in" aria-pressed="false">blur in</button>
+        <button class="chip" data-t="overshoot" aria-pressed="false">overshoot</button>
+        <button class="chip" data-t="spring" aria-pressed="false">spring</button>
+        <button class="chip" data-t="bounce" aria-pressed="false">bounce</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="como" id="como">
+  <div class="wrap">
+    <div class="rev">
+      <p class="kicker">Como pedir</p>
+      <h2>Três informações fazem o pedido <em class="s">funcionar</em></h2>
+      <p class="lead">O termo sozinho já ajuda bastante, mas o resultado só chega perto do que você imaginou quando o pedido também diz quanto tempo o efeito dura e em que ordem as coisas acontecem.</p>
+    </div>
+    <div class="passos">
+      <article class="passo rev"><b>1</b><h3>O nome do efeito</h3><p>Use o termo em inglês, que é como o efeito aparece na documentação do Remotion, do After Effects e do CSS, de modo que a IA reconhece <code>pop in</code> na hora, enquanto “aparecer com graça” vira chute.</p></article>
+      <article class="passo rev"><b>2</b><h3>Duração e curva</h3><p>Acrescente quanto tempo dura e como acelera, porque <code>0,4 s em ease-out</code> produz um movimento bem diferente de <code>1 s em linear</code>, ainda que os dois sejam o mesmo fade in.</p></article>
+      <article class="passo rev"><b>3</b><h3>A ordem da cena</h3><p>Descreva o que entra primeiro e o que vem depois, já que a mesma lista de efeitos muda de sentido conforme a sequência em que os elementos aparecem na tela.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="efeitos" id="efeitos">
+  <div class="wrap">
+    <div class="cab rev">
+      <div>
+        <p class="kicker">O dicionário</p>
+        <h2>Trinta efeitos, <em class="s">rodando</em></h2>
+        <p class="lead">Cada cartão mostra o efeito em movimento, o momento em que ele funciona e o pedido pronto. Clique na animação para tocar de novo.</p>
+      </div>
+      <div class="abas" id="abas" role="group" aria-label="Filtrar por grupo"></div>
+    </div>
+    <div class="grade" id="grade"></div>
+  </div>
+</section>
+
+<section class="pedido-sec" id="pedido">
+  <div class="wrap mestre">
+    <div class="rev">
+      <p class="kicker">O pedido completo</p>
+      <h2>Junte os termos num <em class="s">só</em> pedido</h2>
+      <p class="lead">Quando os nomes estão na mão, o pedido inteiro cabe num bloco como este, que funciona no Claude, no ChatGPT ou em qualquer ferramenta que gere animação por código. Troque o que está entre colchetes pelo seu caso.</p>
+      <p class="dica"><b>O truque da última linha:</b> pedir a lista de efeitos antes da animação deixa você corrigir o plano com uma frase, o que sai muito mais barato do que refazer um vídeo inteiro.</p>
+    </div>
+    <div class="bloco rev">
+      <div class="barra-t"><span>pedido.txt</span><button class="copiar" data-copia="mestre"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>Copiar</button></div>
+<pre id="mestre">Quero uma animação de <span class="v">[8]</span> segundos em <span class="v">[1080x1920]</span> para abrir um reel sobre <span class="v">[tema]</span>.
+Ferramenta: <span class="v">[Remotion / HTML e CSS / After Effects / CapCut]</span>.
+
+Elementos, na ordem em que aparecem:
+1. Título "<span class="v">[texto]</span>": blur in de 0,6 s com ease-out.
+2. Três tópicos: slide in da esquerda em stagger de 0,08 s, com 0,5 s cada.
+3. Palavra "<span class="v">[palavra-chave]</span>": highlight com tarja azul crescendo em 0,35 s.
+4. Número "<span class="v">[87%]</span>": count-up de 1,2 s com ease-out, seguido de punch-in de 115%.
+
+Transições: hard cut no fim de cada frase e crossfade de 0,4 s só na mudança de assunto.
+Ritmo: nenhum movimento linear e nenhuma animação acima de 0,8 s, exceto o count-up.
+Cores: fundo <span class="v">[cor]</span>, destaque <span class="v">[cor]</span>. Fonte: <span class="v">[nome]</span>.
+
+Antes de animar, me devolva a lista de efeitos com o segundo em que cada um começa, para eu aprovar.</pre>
+    </div>
+  </div>
+</section>
+
+<section class="autor" id="autor">
+  <div class="wrap">
+    <div class="retrato rev"><img src="assets/autor.jpg" alt="Simião Cavalcante" width="360" height="480" loading="lazy"></div>
+    <div class="rev">
+      <p class="kicker">Quem montou</p>
+      <h2>Simião <em class="s">Cavalcante</em></h2>
+      <p>Procurador do Município do Rio de Janeiro, professor e entusiasta de tecnologia, cursando MBA em Engenharia de Software pela USP e Master em Inteligência Artificial Generativa pela PUC-Rio. No YouTube e no Instagram, mostro como usar ferramentas de IA para estudar para concursos públicos com mais eficiência e para atuar com método, inclusive na edição dos próprios vídeos.</p>
+      <div class="redes">
+        <a class="btn pri" href="https://instagram.com/simiao_cavalcante" target="_blank" rel="noopener">Instagram @simiao_cavalcante</a>
+        <a class="btn" href="https://youtube.com/@simiao.cavalcante" target="_blank" rel="noopener">YouTube @simiao.cavalcante</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A ideia de reunir esses termos num dicionário veio de um <a href="https://x.com/douglasjanuario/status/2110048988900540486" target="_blank" rel="noopener">post de Douglas Januário no X</a>, que montou a primeira versão com 24 efeitos. Esta versão foi reorganizada em cinco grupos, ampliada para trinta efeitos e animada com a identidade de Simião Cavalcante.</p>
+    <p>Material gratuito. Pode compartilhar o link à vontade.</p>
+  </div>
+</footer>
+
+<div class="aviso" id="aviso" role="status">Pedido copiado</div>
+
+<script>
+const GRUPOS = {entradas:"Entradas", ritmo:"Ritmo", texto:"Texto", camera:"Câmera", transicoes:"Transições"};
+const Q = '<div class="q"></div>';
+const AB = (a,b)=>`<div class="cn a"><div>${a}</div></div><div class="cn b"><div>${b}</div></div>`;
+const ESTUDIO = '<div class="cena estudio"><div class="estante"></div><div class="rosto"></div><div class="ombros"></div></div>';
+
+const EFEITOS = [
+  {id:"fade-in", g:"entradas", pt:"Surgir", en:"fade in", d:Q,
+   uso:"Serve para elementos que precisam chegar sem chamar atenção, como uma legenda, um rodapé ou um fundo.",
+   pedido:"Faça o subtítulo entrar com fade in de 0,4 s em ease-out."},
+  {id:"slide-in", g:"entradas", pt:"Deslizar", en:"slide in", d:Q,
+   uso:"Funciona quando o elemento tem uma origem, como o tópico que vem da lateral para entrar numa lista.",
+   pedido:"Faça cada tópico entrar com slide in da esquerda, deslocamento de 40 px e 0,5 s em ease-out."},
+  {id:"pop-in", g:"entradas", pt:"Aparecer com salto", en:"pop in", d:Q,
+   uso:"Dá energia a ícones, selos e botões, que crescem um pouco além do tamanho final antes de assentar.",
+   pedido:"Aplique pop in no ícone, com escala de 0 a 1,1 voltando a 1 em 0,45 s."},
+  {id:"blur-in", g:"entradas", pt:"Do borrado ao nítido", en:"blur in", d:'<span class="pal">PROVA</span>',
+   uso:"Combina com títulos de abertura, porque a palavra ganha foco no mesmo instante em que o olho chega nela.",
+   pedido:"Faça o título entrar com blur in, de 16 px de desfoque até nítido em 0,6 s."},
+  {id:"draw-on", g:"entradas", pt:"Traço se desenhando", en:"draw-on",
+   d:'<svg viewBox="0 0 200 110" aria-hidden="true"><path pathLength="1" d="M8 78 C 38 14, 72 14, 98 60 S 160 104, 192 34"/><circle pathLength="1" cx="192" cy="34" r="9"/></svg>',
+   uso:"É o efeito das metáforas em traço fino, quando uma linha precisa nascer diante de quem assiste.",
+   pedido:"Desenhe o contorno com draw-on (stroke-dashoffset) em 1,2 s com ease-in-out."},
+  {id:"mask-reveal", g:"entradas", pt:"Revelar por máscara", en:"mask reveal", d:'<span class="mask"><span class="pal">REVELA</span><i></i></span>',
+   uso:"Revela o texto por trás de uma barra que atravessa a palavra, o que dá cara de abertura de programa de TV.",
+   pedido:"Revele a palavra com mask reveal da esquerda para a direita, guiado por uma barra azul, em 0,7 s."},
+
+  {id:"ease-out", g:"ritmo", pt:"Chega freando", en:"ease-out", d:'<div class="trilho"><span class="alvo"></span>'+Q+'</div>',
+   uso:"É a curva padrão de quase toda entrada, já que o movimento começa rápido e desacelera até parar.",
+   pedido:"Use ease-out (cubic-bezier 0.16, 1, 0.3, 1) em todas as entradas."},
+  {id:"ease-in-out", g:"ritmo", pt:"Acelera e freia", en:"ease in-out",
+   d:'<div class="pilha"><div class="trilho duplo lin"><span class="rotulo">linear</span><div class="q cinza"></div></div><div class="trilho duplo eio"><span class="rotulo">ease in-out</span>'+Q+'</div></div>',
+   uso:"Serve para o que já está na tela e muda de lugar, porque o elemento sai devagar e chega devagar.",
+   pedido:"Mova o cartão para o topo em 0,6 s com ease-in-out, nunca em linear."},
+  {id:"overshoot", g:"ritmo", pt:"Passa do ponto e volta", en:"overshoot", d:'<div class="trilho"><span class="alvo"></span>'+Q+'</div>',
+   uso:"Deixa o movimento mais vivo quando o elemento ultrapassa o destino por um instante antes de voltar.",
+   pedido:"Faça o selo deslizar com overshoot (cubic-bezier 0.34, 1.56, 0.64, 1) em 0,5 s."},
+  {id:"spring", g:"ritmo", pt:"Mola", en:"spring", d:'<span class="linha-alvo"></span>'+Q,
+   uso:"Simula física de verdade, de modo que o elemento oscila algumas vezes até descansar no lugar.",
+   pedido:"Anime a entrada com spring de damping 12 e stiffness 120."},
+  {id:"bounce", g:"ritmo", pt:"Quicar", en:"bounce", d:'<span class="chao"></span>'+Q,
+   uso:"Imita uma bola caindo no chão, o que funciona em peças leves e quase nunca em assunto sério.",
+   pedido:"Faça o ícone cair do topo com bounce, em três quiques cada vez menores ao longo de 0,9 s."},
+  {id:"stagger", g:"ritmo", pt:"Cascata", en:"stagger",
+   d:'<div class="fila">'+[0,1,2,3,4].map(i=>`<div class="q p" style="animation-delay:${i*0.1}s"></div>`).join("")+'</div>',
+   uso:"Organiza listas e grades, já que cada item entra com um pequeno atraso em relação ao anterior.",
+   pedido:"Faça os cinco itens entrarem em stagger, com 0,08 s de atraso entre um e outro."},
+
+  {id:"word-reveal", g:"texto", pt:"Palavra por palavra", en:"word reveal",
+   d:'<p class="frase">'+["o","segredo","é","o"].map((w,i)=>`<span style="animation-delay:${i*0.22}s">${w}</span>`).join(" ")+' <span class="d" style="animation-delay:.88s">vocabulário</span></p>',
+   uso:"É a legenda dos meus reels, em que cada palavra aparece no instante exato em que é falada.",
+   pedido:"Mostre a legenda com word reveal sincronizado com o tempo de cada palavra da transcrição."},
+  {id:"typewriter", g:"texto", pt:"Máquina de escrever", en:"typewriter", d:'<span class="tw">pedido exato.</span>',
+   uso:"Combina com prompts, comandos e mensagens, quando o texto precisa parecer digitado naquele momento.",
+   pedido:"Escreva o prompt com typewriter, 28 caracteres por segundo e cursor piscando no fim."},
+  {id:"highlight", g:"texto", pt:"Grifar", en:"highlight", d:'<p class="frase">a palavra <mark>certa</mark></p>',
+   uso:"Marca a palavra que carrega a ideia da frase, como faz quem passa marca-texto num livro de lei.",
+   pedido:"Aplique highlight na palavra-chave com uma tarja azul que cresce da esquerda em 0,35 s."},
+  {id:"text-swap", g:"texto", pt:"Trocar a palavra", en:"text swap", d:'<p class="frase">pedido <span class="rolo"><span>vago</span><span>exato</span></span></p>',
+   uso:"Mostra a virada de uma ideia, já que uma palavra sai rolando para cima enquanto a outra ocupa o lugar dela.",
+   pedido:"Troque VAGO por EXATO com text swap vertical de 0,4 s em ease-in-out."},
+  {id:"kinetic", g:"texto", pt:"Tipografia cinética", en:"kinetic typography", d:'<div class="kin"><b>FALA</b><b>NO</b><b>RITMO</b></div>',
+   uso:"Faz o texto ganhar peso no ritmo da fala, porque cada palavra muda de tamanho conforme a ênfase.",
+   pedido:"Monte a frase com kinetic typography, palavras de ênfase em escala 1,6 e as demais em 1."},
+  {id:"count-up", g:"texto", pt:"Número contando", en:"count-up", d:'<span class="conta" aria-label="87%"></span>',
+   uso:"Dá peso a dados e resultados, quando o número sobe até o valor final diante de quem assiste.",
+   pedido:"Faça o 87% subir com count-up de 1,2 s em ease-out, sem casas decimais."},
+
+  {id:"punch-in", g:"camera", pt:"Zoom de impacto", en:"punch-in", d:ESTUDIO,
+   uso:"Aproxima a câmera do rosto de repente para marcar a frase mais forte, sem precisar de outro plano.",
+   pedido:"Faça um punch-in de 115% no corte da frase de impacto, sem transição."},
+  {id:"ken-burns", g:"camera", pt:"Zoom lento em foto", en:"Ken Burns", d:'<div class="cena paisagem"></div>',
+   uso:"Dá vida a uma foto parada, porque o zoom lento com leve deslocamento faz a imagem parecer filmada.",
+   pedido:"Aplique Ken Burns na foto, com escala de 1 a 1,15 e deslocamento leve ao longo de 6 s em linear."},
+  {id:"pan", g:"camera", pt:"Panorâmica", en:"pan", d:'<div class="faixa"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="moldura"></span>',
+   uso:"Percorre uma imagem larga, como a captura inteira de um sistema, mostrando uma parte de cada vez.",
+   pedido:"Faça um pan horizontal pela captura de tela, da esquerda para a direita em 4 s com ease-in-out."},
+  {id:"parallax", g:"camera", pt:"Camadas em velocidades", en:"parallax", d:'<span class="camada c1"></span><span class="camada c2"></span><span class="camada c3"></span>',
+   uso:"Cria profundidade numa cena plana quando o fundo anda devagar ao mesmo tempo que a frente anda rápido.",
+   pedido:"Use parallax em três camadas, com o fundo a 20%, o meio a 50% e a frente a 100% da velocidade."},
+  {id:"shake", g:"camera", pt:"Tremor de câmera", en:"camera shake", d:'<div class="cena"><span class="alerta">!</span></div>',
+   uso:"Reforça impacto, alerta ou erro com uma tremida curta, que precisa durar menos de meio segundo.",
+   pedido:"Aplique camera shake de 0,3 s com amplitude de 6 px no momento do alerta."},
+  {id:"rack-focus", g:"camera", pt:"Troca de foco", en:"rack focus", d:'<div class="cartao tras">fundo</div><div class="cartao frente">frente</div>',
+   uso:"Leva o olhar de um elemento para outro, que ganha nitidez no mesmo instante em que o primeiro se desfoca.",
+   pedido:"Faça um rack focus do fundo para o cartão da frente em 0,8 s."},
+
+  {id:"hard-cut", g:"transicoes", pt:"Corte seco", en:"hard cut", d:AB("<small>cena</small>1","<small>cena</small>2"),
+   uso:"Aparece mais do que qualquer outra transição nos reels, porque troca de plano sem efeito algum no fim de uma frase.",
+   pedido:"Use hard cut entre os planos, sempre no fim de uma oração e nunca no meio de uma palavra."},
+  {id:"crossfade", g:"transicoes", pt:"Fusão", en:"crossfade", d:AB("<small>cena</small>1","<small>cena</small>2"),
+   uso:"Indica passagem de tempo ou mudança de assunto, quando uma cena se dissolve dentro da outra.",
+   pedido:"Use crossfade de 0,4 s apenas na mudança de assunto."},
+  {id:"wipe", g:"transicoes", pt:"Cortina", en:"wipe", d:AB("<small>cena</small>1","<small>cena</small>2"),
+   uso:"Empurra a cena nova sobre a antiga com uma borda que atravessa a tela, como uma página virando.",
+   pedido:"Faça a transição com wipe da esquerda para a direita, borda reta, 0,5 s em ease-in-out."},
+  {id:"whip-pan", g:"transicoes", pt:"Chicote", en:"whip pan", d:AB("<small>cena</small>1","<small>cena</small>2"),
+   uso:"Imita um giro rápido de câmera com borrão de movimento, que dá ritmo a vídeos mais acelerados.",
+   pedido:"Use whip pan de 0,25 s com motion blur horizontal entre as cenas."},
+  {id:"zoom-through", g:"transicoes", pt:"Zoom de passagem", en:"zoom through", d:AB('<div class="anel"></div><small>cena 1</small>',"<small>cena</small>2"),
+   uso:"Atravessa a cena atual para chegar à próxima, como se a câmera entrasse num detalhe da imagem.",
+   pedido:"Faça um zoom through no ícone central até ele ocupar a tela e revelar a próxima cena."},
+  {id:"morph", g:"transicoes", pt:"Uma forma vira outra", en:"morph", d:Q,
+   uso:"Transforma uma forma em outra sem corte, o que funciona bem quando uma ideia se converte em outra.",
+   pedido:"Faça o quadrado virar círculo com morph de 0,6 s em ease-in-out, mantendo a cor."}
+];
+
+const COPIA = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>';
+const grade = document.getElementById("grade");
+grade.innerHTML = EFEITOS.map((e,i)=>`
+  <article class="card" data-g="${e.g}" id="${e.id}">
+    <div class="demo fx-${e.id}" role="button" tabindex="0" aria-label="Tocar de novo a animação de ${e.en}">${e.d}</div>
+    <div class="info">
+      <div class="topo-c"><span class="n">${String(i+1).padStart(2,"0")}</span><span class="g">${GRUPOS[e.g]}</span></div>
+      <h3>${e.pt}</h3>
+      <p class="en">${e.en}</p>
+      <p class="uso">${e.uso}</p>
+      <div class="pedido"><code>${e.pedido}</code><button class="copiar" data-i="${i}">${COPIA}Copiar</button></div>
+    </div>
+  </article>`).join("");
+
+/* filtros */
+const abas = document.getElementById("abas");
+const conta = g => EFEITOS.filter(e=>g==="todos"||e.g===g).length;
+abas.innerHTML = ["todos",...Object.keys(GRUPOS)].map(g=>`<button class="aba" data-g="${g}" aria-pressed="${g==="todos"}">${g==="todos"?"Todos":GRUPOS[g]}<span>${conta(g)}</span></button>`).join("");
+abas.addEventListener("click", ev=>{
+  const b = ev.target.closest(".aba"); if(!b) return;
+  abas.querySelectorAll(".aba").forEach(x=>x.setAttribute("aria-pressed", x===b));
+  document.querySelectorAll(".card").forEach(c=>c.hidden = !(b.dataset.g==="todos"||c.dataset.g===b.dataset.g));
+});
+
+/* copiar */
+const aviso = document.getElementById("aviso");
+let tAviso;
+async function copiar(texto, botao){
+  try{ await navigator.clipboard.writeText(texto); }
+  catch(_){ const t=document.createElement("textarea"); t.value=texto; t.style.position="fixed"; t.style.opacity="0"; document.body.appendChild(t); t.select(); try{document.execCommand("copy");}catch(e){} t.remove(); }
+  botao.classList.add("ok"); aviso.classList.add("on");
+  clearTimeout(tAviso); tAviso=setTimeout(()=>{aviso.classList.remove("on"); botao.classList.remove("ok");},1600);
+}
+document.addEventListener("click", ev=>{
+  const b = ev.target.closest(".copiar"); if(!b) return;
+  const texto = b.dataset.copia==="mestre" ? document.getElementById("mestre").innerText : EFEITOS[+b.dataset.i].pedido;
+  copiar(texto, b);
+});
+
+/* tocar de novo e pausa fora da tela */
+function reinicia(demo){ demo.classList.add("reinicia"); void demo.offsetWidth; demo.classList.remove("reinicia"); demo.classList.add("tocando"); }
+grade.addEventListener("click", ev=>{ const d=ev.target.closest(".demo"); if(d) reinicia(d); });
+grade.addEventListener("keydown", ev=>{ const d=ev.target.closest(".demo"); if(d&&(ev.key==="Enter"||ev.key===" ")){ ev.preventDefault(); reinicia(d); } });
+if("IntersectionObserver" in window){
+  const io = new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle("fora", !e.isIntersecting)),{rootMargin:"80px"});
+  document.querySelectorAll(".demo").forEach(d=>io.observe(d));
+}
+
+/* teste interativo */
+const palco = document.getElementById("palco"), atual = document.getElementById("pedidoAtual"), chips = document.getElementById("chips");
+const VAGO = "faz uma animação bonita";
+chips.addEventListener("click", ev=>{
+  const b = ev.target.closest(".chip"); if(!b) return;
+  chips.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", x===b));
+  palco.className = "palco"; void palco.offsetWidth; palco.classList.add("t-"+b.dataset.t);
+  if(b.dataset.t==="vago"){
+    atual.innerHTML = `<b>Seu pedido</b><q>${VAGO}</q><br>Sem o nome do efeito, a IA escolhe um movimento qualquer, que raramente é o que você tinha em mente.`;
+  } else {
+    const e = EFEITOS.find(x=>x.id===b.dataset.t);
+    atual.innerHTML = `<b>Seu pedido</b><q>${e.pedido}</q>`;
+  }
+});
+
+/* barra e revelação */
+const topo = document.getElementById("topo");
+addEventListener("scroll", ()=>topo.classList.toggle("solido", scrollY>30), {passive:true});
+if("IntersectionObserver" in window){
+  const rv = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); rv.unobserve(e.target); } }),{threshold:.12});
+  document.querySelectorAll(".rev").forEach(el=>rv.observe(el));
+} else document.querySelectorAll(".rev").forEach(el=>el.classList.add("in"));
+</script>
+</body>
+</html>
